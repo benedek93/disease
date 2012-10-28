@@ -1,0 +1,40 @@
++---------+
+| Disease |
++---------+
+
+
+0. Overview
+===========
+
+This is a very simple test of a probabilistic cellular automaton, simulating
+the spread of a disease or virus across a grid of organisms.
+
+Each cell can be susceptible, from where it can (with some probability) transition
+to an infected state if it has infected neighbors.  From that state, it will get
+removed with some chance.  If it is removed and has susceptible neighbors, it can
+become susceptible again.
+
+
+1. Compilation
+==============
+
+The program depends on the SDL library ( http://www.libsdl.org/ ), so you will need
+to have the development version of it installed.
+
+If everything is set up properly, a simple
+ $ make
+should suffice.
+
+
+2. Usage
+========
+
+After the program has compiled successfully, type
+ $ ./disease -h
+for a list of options.
+
+When the program is running, you can click on the field to start an infection.
+
+
+Have fun!
+  - Benedek <vartokb@student.ethz.ch>
